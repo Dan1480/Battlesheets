@@ -22,7 +22,7 @@ class SheetsManager():
         credentials = service_account.ServiceAccountCredentials.from_json_keyfile_name(
                       SERVICE_ACCOUNT_FILE, scopes=SCOPES)
         self.service = discovery.build('sheets', 'v4', credentials = credentials)
-        self.spreadsheetId = '1wwf3l6GjBeInXSLFLcf71u6DB5CTisCA_dhRqWPGayc'
+        self.spreadsheetId = 'ENTER YOUR SHEET ID HERE'
         self.players_sheet_id = -1 #change later
         self.player_name =''
         self.player_row_in_lobby = -1
